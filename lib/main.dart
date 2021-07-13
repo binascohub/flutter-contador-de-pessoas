@@ -5,13 +5,32 @@ void main() {
       title: "Contador de Pessoas",
       home: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
+        children: [
           Text(
             "Pessoas: 0",
             style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold
             ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                  onPressed: (){},
+                  child: Text("+1", style: TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.white),
+                  )
+              ),
+              TextButton(
+                  onPressed: (){},
+                  child: Text("-1", style: TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.white),
+                  )
+              ),
+            ],
           ),
           Text(
             "Pode Entrar!",
